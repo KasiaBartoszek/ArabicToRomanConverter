@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org"  >
+<head>
+    <meta charset="UTF-8"/>
+    <title>Arabic To Roman Converter</title>
+</head>
+<body>
+<h1>Arabic To Roman Converter</h1>
+
+<form action="#" th:action="@{/convert}"  method="post">
+    <p>Arabic value: <input type="text" name="data"/></p>
+    <p><input type="submit" value="Convert"/></p>
+</form>
+
+<form action="#" th:action="@{/history}"  method="get">
+    <p><input type="submit" value="History"/></p>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" >
+<head>
+    <meta charset="UTF-8">
+    <title>Conversion history</title>
+</head>
+<ttbody>
+    <tr th:each="ConversionHistory: ${history}">
+        <td th:text="${ConversionHistory.getValue()}"/>
+        <td th:text="${ConversionHistory.getConvertedValue()}"/>
+        <td th:text="${ConversionHistory.getConversionDate()}"/>
+        <td th:text="${ConversionHistory.getStatus()}"/>
+        <br />
+    </tr>
+    <label>display Counter: </label>
+    div><span th:text="${displayCounter}"/></div>
+    <a href="/">BACK</a><br/>
+</ttbody>
+</html>
